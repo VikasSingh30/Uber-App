@@ -19,3 +19,25 @@ The request body must be a JSON object with the following structure:
     "email": "string (required, valid email format)",
     "password": "string (required, minimum 6 characters)"
 }
+### Response Body
+{
+    "token": "string (JWT token)",
+    "user": {
+        "_id": "string (User ID)",
+        "fullname": {
+            "firstname": "string",
+            "lastname": "string"
+        },
+        "email": "string"
+    }
+}
+### Error Response
+{
+    "errors": [
+        {
+            "msg": "Invalid Email",
+            "param": "email",
+            "location": "body"
+        }
+    ]
+}
