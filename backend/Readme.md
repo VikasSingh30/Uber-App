@@ -107,3 +107,12 @@ Requires a valid JWT token in the Authorization header or cookie:
   - `email` (string): User's email address (must be a valid email).
   - `password` (string): User's password (minimum 6 characters).
 - `token` (String): JWT Token## `/captains/register` Endpoint
+
+The flow works like this:
+
+1️⃣ Routes (routes.js) → Handles incoming requests and applies middleware.
+2️⃣ Middleware (middleware.js) → Validates/authenticates the request before it reaches the controller.
+3️⃣ Controller (controller.js) → Processes the request and calls the appropriate service.
+4️⃣ Service (service.js) → Contains business logic and interacts with models.
+5️⃣ Models (models.js) → Connects to the database and fetches/stores data.
+6️⃣ Response is sent back to the client.
