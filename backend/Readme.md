@@ -116,3 +116,13 @@ The flow works like this:
 4️⃣ Service (service.js) → Contains business logic and interacts with models.
 5️⃣ Models (models.js) → Connects to the database and fetches/stores data.
 6️⃣ Response is sent back to the client.
+
+# API Testing (USER)
+{
+    "fullname": {
+        "firstname": "test_firstname",
+        "lastname": "test_lastname"
+    },
+    "email": "test@test.com",
+    "password": "test_password"
+}
