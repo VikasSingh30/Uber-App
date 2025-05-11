@@ -7,7 +7,7 @@ const cors = require('cors');
 const userRouter = require('./routes/user.routes.js');
 const captainRouter = require('./routes/captain.routes.js');
 
-const connectToDB = require('./db/db');
+const connectToDB = require('./db/db.js');
 connectToDB();
 
 
